@@ -21,8 +21,14 @@ configurations.all {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation(ReactiveX.rxJava3)
+
+    implementation(Kotlin.stdlib.jdk8)
     implementation(KotlinX.coroutines.core)
+    implementation(KotlinX.serialization.json)
+    implementation(ReactiveX.rxJava2)
+    implementation(KotlinX.coroutines.core)
+    implementation(ReactiveX.rxJava3)
+
     testImplementation("junit", "junit", "4.12")
     testImplementation("com.google.truth:truth:_")
 }
